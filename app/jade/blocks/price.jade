@@ -1,0 +1,49 @@
+.price
+	.price-block
+		+price ([{
+			name: 'База',
+			text: '1,99 USD',
+			hit: 0,
+			func: [{
+				funcName: 'Розовый фильтр',
+				funcStatus: 1
+			}, {
+				funcName: 'Смайлки',
+				funcStatus: 0
+			}, {
+				funcName: 'Комментарии',
+				funcStatus: 0
+			}]
+		}, {
+			name: 'Стандарт',
+			text: '3,99 USD',
+			hit: 1,
+			func: [{
+				funcName: 'Розовый фильтр',
+				funcStatus: 1
+			}, {
+				funcName: 'Смайлки',
+				funcStatus: 1
+			}, {
+				funcName: 'Комментарии',
+				funcStatus: 0
+			}]
+		}, {
+			name: 'Анлим',
+			text: '9,99 USD',
+			hit: 0,
+			func: [{
+				funcName: 'Розовый фильтр',
+				funcStatus: 1
+			}, {
+				funcName: 'Смайлки',
+				funcStatus: 1
+			}, {
+				funcName: 'Комментарии',
+				funcStatus: 1
+			}]
+		}])
+	.price-controls
+		input(type='radio' name='price-controls' checked)
+		input(type='radio' name='price-controls')
+		input(type='radio' name='price-controls')

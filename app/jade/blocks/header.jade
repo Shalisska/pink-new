@@ -1,0 +1,20 @@
+header.header
+	.layout-center-wrapper
+		a.logo(href='#'): img.logo-img(alt="Pink" src='../images/Pink-logo-1.png')
+		.menu
+			.menu-controls
+				a.menu-controls--open(href='#')
+				a.menu-controls--close(herf='#')
+			+nav ([{
+				name: 'Информация',
+				href: '#'
+			}, {
+				name: 'Возможности',
+				href: '#'
+			}, {
+				name: 'Отзывы',
+				href: '#'
+				}, {
+				name: 'Стоимость',
+				href: '#'
+			}])

@@ -1,0 +1,28 @@
+mixin price(items)
+	each item in items
+		.price-item
+			if item.hit===1
+				.price-item__title.price-item__title--hit
+					p.price-item__title-name=item.name
+					p.price-item__title-text=item.text
+
+				each func in item.func
+					if func.funcStatus===1
+						.price-item__func.price-item__func--on
+							p.price-item__func-text=func.funcName
+					else
+						.price-item__func
+							p.price-item__func-text=func.funcName
+
+			else
+				.price-item__title
+					p.price-item__title-name=item.name
+					p.price-item__title-text=item.text
+
+				each func in item.func
+					if func.funcStatus===1
+						.price-item__func.price-item__func--on
+							p.price-item__func-text=func.funcName
+					else
+						.price-item__func
+							p.price-item__func-text=func.funcName

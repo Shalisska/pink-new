@@ -1,0 +1,5 @@
+mixin reviews(items)
+	.reviews-item
+		each item in items
+			p.reviews-item__title=item.user
+			p.reviews-item__text!='&#171;' + item.text + '&#187;'
